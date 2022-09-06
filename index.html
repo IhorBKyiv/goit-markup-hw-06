@@ -61,34 +61,30 @@
             <p></p>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <div class="modal-form">
                     <form class="form">
                         <b class="form-title">Залиште свої дані, ми вам передзвонимо</b>
-                        <div class="form-field">
-                        <label for="name">Ім'я</label>
-                        <input type="text" name="name" id="name"/>
-                        </div>
-                        <div class="form-field">
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel"/>
-                        </div>
-                        <div class="form-field">
-                        <label for="mail">Пошта</label>
-                        <input type="email" name="mail" id="mail"/>
-                        </div>
-                        <div class="form-field">
-                        <label for="comment">Коментар</label>
-                        <textarea name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
-                        </div>
-                        <input type="checkbox" name="policy" id="policy">
-                        <label for="policy">Погоджуюся з розсилкою та приймаю Умови договору</label>
-                        <button type="submit">Відправити</button>
+                        <label class="form-field">
+                        <input type="text" class="form-input" name="name" autofocus />
+                        <span class="form-label">Ім'я</span></label>
+                        <label class="form-field">
+                        <input type="tel" class="form-input" name="tel"/>
+                        <span>Телефон</span></label>
+                        <label class="form-field">
+                        <input type="email" class="form-input" name="mail"/>
+                        <span>Пошта</span></label>
+                        <label class="form-field">
+                        <textarea name="comment" class="comment" rows="8" placeholder="Введіть текст"></textarea>
+                        <span>Коментар</span></label>
+                        <label class="chekbox-label">
+                        <input type="checkbox" class="checkbox" name="policy">
+                        <span>Погоджуюся з розсилкою та приймаю Умови договору</span></label>
+                        <button class="submit-button" type="submit">
+                        <span class="submit-text">Відправити</span></button>
                     </form>
-                    </div>
                     <p></p>
                     <button class="close-button" data-modal-close>
                             <svg class="svg-button" width="11" height="11">
-                                <use href="./images/close.svg#icon-Vector-1"></use>
+                                <use href="./images/icons.svg#icon-Vector-1"></use>
                             </svg>
                     </button>
                 </div>
@@ -393,6 +389,20 @@
                 </li>
             </ul>
             </div>
+    <form class="footer-form">
+        <h4>Підпишіться на розсилку</h4>
+        <div class="form-submit">
+        <label class="">
+        <input type="email" class="footer-input" name="mail" placeholder="E-mail" />
+        </label>
+        <button type="submit" class="submit-button">
+        <span class="submit-text">Підписатися</span>
+        <svg class="footer-svg" width="24" height="24">
+        <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg>
+        </button>
+        </div>
+    </form>
     </div>
 </footer>
 <script src="./js/modal.js"></script>
