@@ -313,11 +313,11 @@ img{
     width: 448px;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px 10px;
+    padding: 15px 15px;
 }
 
 .form-title{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -337,19 +337,31 @@ img{
 
 .form-label {
     margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-label2{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .form-input{
     border: 1px solid rgba(117, 117, 117, 0.5);
-    padding: 10px 25px;
+    padding: 10px;
+    padding-left: 25px;
 }
 
 
 .form-icon{
     position: absolute;
-    top: 65%;
-    left: 5px;
-    transform: translateY(-50%);
+    top: 50%;
+    left: 15px;
+    transform: translateX(-50%);
 }
 
 
@@ -374,6 +386,7 @@ img{
 
 .form-button{
     margin-top: 10px;
+    margin-bottom: 40px;
     width: 200px;
     height: 50px;
     background: #188CE8;
@@ -382,6 +395,16 @@ img{
     border: none;
     color: var(--primary-white-color);
     cursor: pointer;
+}
+
+.form-btntext{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 }
 
 .form-icon2{
@@ -464,12 +487,17 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cub
     border-radius: 50%;
     background-color: var(--primary-white-color);
     border-color: #0000001A;
+    cursor: pointer;
 }
 
 .svg-button{
     width: 11px;
     height: 11px;
     color: #000000;
+}
+
+.svg-button:hover{
+    fill: var(--accent-color);
 }
 
 
@@ -851,9 +879,20 @@ h4{
     align-items: baseline;
 }
 
+.submit-text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
 .footer-input{
-    width: 305px;
-    padding: 15px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
     margin-right: 12px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -879,6 +918,7 @@ h4{
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
